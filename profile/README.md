@@ -1,4 +1,4 @@
-![Home GitHub](https://github.com/stone-payments/.github/assets/11020807/70a7f641-99d1-4bcf-b62f-8945fec0500d)
+![Banner contendo uma edição do Octocat que é mascote do GitHub com roupas e acessórios da Stone](assets/banner.png)
 
 🇺🇸 We are preparing an incredible page for you who would like to know a little more about Stone Pagamentos.
 
