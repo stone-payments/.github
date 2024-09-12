@@ -2,7 +2,7 @@
 
 🇺🇸 We are preparing an incredible page for you who would like to know a little more about Stone Pagamentos.
 
-🇧🇷 Estamos preparando uma página incrível para você que deseja conhecer um pouco mais sobre a Stone Pagamentos.
+🇧🇷 Estamos preparando uma página incrível para você que deseja conhecer um pouco mais sobre a Stone Pagamentos. Se você é colaborador e está autenticado no GitHub pode [clicar aqui](#?view_as=member) para ver a página interna.
 
 ---
 
