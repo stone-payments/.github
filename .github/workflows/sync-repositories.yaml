@@ -8,7 +8,7 @@ on:
 jobs:
   sync-repos:
     if: github.repository_owner == 'stone-payments'
-    runs-on: small-runner
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         repo: [
