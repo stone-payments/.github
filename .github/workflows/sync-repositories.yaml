@@ -1,0 +1,81 @@
+name: Sync Repositories
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sync-repos:
+    if: github.repository_owner == 'stone-payments'
+    runs-on: small-runner
+    strategy:
+      matrix:
+        repo: [
+            "pagarme/.github",
+            "mundipagg/.github",
+            "dlpco/.github",
+            "stone-ton/.github"
+        ]
+
+    steps:
+
+    - name: Extract Repository Info
+      id: extract-info
+      run: |
+        IFS='/' read -r org repo <<< "${{ matrix.repo }}"
+        echo "ORG=$org" >> $GITHUB_ENV
+        echo "REPO=$repo" >> $GITHUB_ENV
+
+    - name: Generate GitHub App Token
+      id: app-token-stone-payments
+      uses: actions/create-github-app-token@v1
+      with:
+        app-id: ${{ vars.APP_ID }}
+        private-key: ${{ secrets.PRIVATE_KEY }}
+        owner: ${{ github.repository_owner }}
+        repositories: ${{ env.REPO }}
+
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ steps.app-token-stone-payments.outputs.token }}
+        path: "${{github.repository_owner}}-${{ env.REPO }}"
+
+    - name: Generate GitHub App Token
+      id: app-token
+      uses: actions/create-github-app-token@v1
+      with:
+        app-id: 996272
+        private-key: ${{ secrets.GH_PRIVATE_KEY }}
+        owner: ${{ env.ORG }}
+        repositories: ${{ env.REPO }}
+
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ steps.app-token.outputs.token }}
+        repository: "${{ env.ORG }}/${{ env.REPO }}"
+        path: "${{ env.ORG }}-${{ env.REPO }}"
+
+    - name: Update Repository
+      env:
+        GH_TOKEN: ${{ steps.app-token.outputs.token }}
+      run: | 
+
+        # Config Git
+        echo "Configuring Git..."
+        git config --global user.email "foundation-platform@stone.com.br"
+        git config --global user.name "Foundation Platform Bot - Sync Repos"
+
+        # Update Repository on Another Organization
+        echo "Updating Repository..."
+        cp -r "${{github.repository_owner}}-${{ env.REPO }}"/* "${{ env.ORG }}-${{ env.REPO }}"/
+        cp -r "${{github.repository_owner}}-${{ env.REPO }}"/.github "${{ env.ORG }}-${{ env.REPO }}"/
+        cd "${{ env.ORG }}-${{ env.REPO }}"
+
+        # Commit and Push
+        echo "Commit and Push..."
+        git add .
+        git commit -m "Sync Repository"
+        git push origin main
