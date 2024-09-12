@@ -77,5 +77,14 @@ jobs:
         # Commit and Push
         echo "Commit and Push..."
         git add .
+
+        # Status Verify
+        STATUS=$(git diff --cached --shortstat)
+        if [ -z "$STATUS" ]; then
+            echo "No changes to commit"
+            exit 0
+        fi
+
+        # Commit and Push
         git commit -m "Sync Repository"
         git push origin main
