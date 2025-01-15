@@ -23,13 +23,12 @@ Se você acha que qualquer informação está errada ou faltando, por favor crie
 * [CONTRIBUTING.md](contributing/README.md)
 * [Git Style](git-style/README.md)
 * [Tópicos](topics/README.md)
-* [Licença](license/README.md)
 
 ---
 
 # Licença
 
-Por favor veja o arquivo [LICENSE](LICENSE).
+Por favor veja o arquivo [LICENSE](../LICENSE).
 
 ---
 
