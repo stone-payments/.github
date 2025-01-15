@@ -4,6 +4,6 @@ This repository contains the Stone Co. guidelines and the `.github` repository, 
 
 ## Stone Co. Guidelines
 
-- [Stone Co. Guidelines](stone-co-guidelines/README.md)
+- [Stone Co. Guidelines](stoneco-guidelines/README.md)
 
 Synced from [stone-payments/.github](https://github.com/stone-payments)
