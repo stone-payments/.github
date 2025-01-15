@@ -1,6 +1,6 @@
-# Public `.github` repository
+# Welcome to Stone Co.
 
-GitHub Index Stone Enterprise Companies and Stone Co. Guidelines.
+This repository contains the Stone Co. guidelines and the `.github` repository, which generates the public documentation for GitHub.
 
 ## Stone Co. Guidelines
 
