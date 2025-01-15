@@ -32,6 +32,12 @@ Por favor veja o arquivo [LICENSE](../LICENSE).
 
 ---
 
+# Profile Folder
+
+A pasta [Profile](profile/) é um diretório que contém um arquivo `README.md` com informações sobre o perfil da organização. Este arquivo é exibido na página principal do perfil da organização no GitHub.
+
+---
+
 _Inspirado em [Beeva Bestpractices](https://github.com/beeva-enriqueotero/beeva-best-practices)_
 
 
