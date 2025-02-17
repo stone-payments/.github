@@ -19,7 +19,7 @@ Se você acha que qualquer informação está errada ou faltando, por favor crie
 
 * [Nomenclaturas](naming-convention/README.md)
 * [README.md](readme/README.md)
-* [Código de Conduta](code-of-conduct/README.md)
+* [Código de Conduta](./CODE_OF_CONDUCT.md)
 * [CONTRIBUTING.md](contributing/README.md)
 * [Git Style](git-style/README.md)
 * [Tópicos](topics/README.md)
