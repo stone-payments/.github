@@ -1,10 +1,10 @@
 # Diretrizes para Contributors
-:honeybee: Existe um template para Contributing.md disponível [aqui](template.md):honeybee:
+:honeybee: Existe um template para Contributing.md disponível [aqui](../CONTRIBUTING.md):honeybee:
 
 ## Pull Requests
 
 - **DÊ** aos PRs nomes curtos-mas-descritivos (p.ex. "Improve code coverage for System.Console by 10%" e não "Fix #1234").
-- **NÃO** submeta PRs em "work in progress". Um PR só deve ser submetido quando for considerado pronto para review (ready for review) e consequentemente ser _"merged"_ pelo the contributor.
+- **NÃO** submeta PRs em "work in progress". Um PR só deve ser submetido quando for considerado pronto para review (ready for review) e subsequentemente aprovado para merge pelos mantenedores do projeto
 - **MARQUE** quaisquer usuários que devem saber a respeito e/ou revisar a mudança.
 - **SUBMETA** todas as mudanças de códigos via pull requests (PRs) ao invés de um commit direto. PRs serão revisados e potencialmente _"merged"_ pelos mantenedores do repositório depois de uma revisão de um colega que inclua pelo menos um mantenedor.
 - **ASSEGURE-SE** que cada commit "construa" (build) com sucesso. O PR inteiro deve passar em todos os testes do sistema de Integração Contínua (Continuous Integration, CI) antes de ser _"merged"_ .

@@ -9,11 +9,11 @@ Aqui na stone-payments nós :green_heart: receber input, seja para:
 
 ## Nós desenvolvemos com GitHub
 
-Nós usamos GitHub para armazenar nosso código, para rastrear issues e requisitar features, além de aceitar pull requests.
+Nós usamos GitHub para armazenar nosso código, para rastrear issues (_em repositórios públicos_) e requisitar features, além de aceitar pull requests.
 
 ## Toda mudança no nosso código ocorre por pull request. 
 
-Pull requests são a melhor forma de propor mudanças no código(majoritariamente usamos [Github Flow](https://guides.github.com/introduction/flow/index.html)). PRs são muito bem-vindos:
+Pull requests são a melhor forma de propor mudanças no código (_majoritariamente usamos [Github Flow](https://guides.github.com/introduction/flow/index.html)_). PRs são muito bem-vindos:
 
 1. Crie seu fork de nossos repositórios, faça suas modificações e nos envie o pull request.
 2. Se você adicionou código que deve ser testado, adicione testes.
@@ -36,8 +36,8 @@ Bug Reports tipicamente têm:
 
 ## Código de Conduta
 
-Todo PR deve ser feito levando em consideração as [boas práticas da StoneCO](https://github.com/stone-payments/stoneco-best-practices), em especial o [Código de Conduta](https://github.com/stone-payments/stoneco-best-practices/tree/master/codeOfConduct).
+Todo PR deve ser feito levando em consideração as [boas práticas da StoneCO](./README.md), em especial o [Código de Conduta](./code-of-conduct/README.md).
 
 ## Referências
 
-Esse documento foi adaptado do [Transcriptase Contributing]( https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62)
+Esse documento foi adaptado do [Transcriptase Contributing](https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62)
