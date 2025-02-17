@@ -36,7 +36,7 @@ Bug Reports tipicamente têm:
 
 ## Código de Conduta
 
-Todo PR deve ser feito levando em consideração as [boas práticas da StoneCO](./README.md), em especial o [Código de Conduta](./code-of-conduct/README.md).
+Todo PR deve ser feito levando em consideração as [boas práticas da StoneCO](./README.md), em especial o [Código de Conduta](./CODE_OF_CONDUCT.md).
 
 ## Referências
 
