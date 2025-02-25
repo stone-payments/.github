@@ -7,7 +7,8 @@ Para relatar vulnerabilidades de segurança, utilize exclusivamente o e-mail:
 **opensourcesec@stone.com.br**  
 
 - Forneça detalhes técnicos completos, incluindo versões do software afetado.
-- Inclua etapas reproduzíveis e evidências (logs, capturas ou PoC).
+- Inclua etapas reproduzíveis e evidências (logs ou capturas de tela).
+  - Obs: Não é indicada a exploração de vulnerabilidades, mesmo em caráter de POC, para o report.
 - Resposta inicial dentro de 48 horas úteis.
 
 ## Processo de Divulgação
