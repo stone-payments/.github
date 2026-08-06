@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   sync-repos:
     if: github.repository_owner == 'stone-payments'
@@ -29,7 +32,7 @@ jobs:
 
     - name: Generate GitHub App Token
       id: app-token-stone-payments
-      uses: actions/create-github-app-token@v1
+      uses: stone-payments/approved-actions/actions/create-github-app-token/v1@stable
       with:
         app-id: 996272
         private-key: ${{ secrets.GH_PRIVATE_KEY }}
@@ -37,14 +40,14 @@ jobs:
         repositories: ${{ env.REPO }}
 
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: stone-payments/approved-actions/actions/checkout/v4@stable
       with:
         token: ${{ steps.app-token-stone-payments.outputs.token }}
         path: "${{github.repository_owner}}-${{ env.REPO }}"
 
     - name: Generate GitHub App Token
       id: app-token
-      uses: actions/create-github-app-token@v1
+      uses: stone-payments/approved-actions/actions/create-github-app-token/v1@stable
       with:
         app-id: 996272
         private-key: ${{ secrets.GH_PRIVATE_KEY }}
@@ -52,7 +55,7 @@ jobs:
         repositories: ${{ env.REPO }}
 
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: stone-payments/approved-actions/actions/checkout/v4@stable
       with:
         token: ${{ steps.app-token.outputs.token }}
         repository: "${{ env.ORG }}/${{ env.REPO }}"

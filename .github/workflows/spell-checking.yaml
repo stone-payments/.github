@@ -11,14 +11,17 @@ on: # rebuild any PRs and main branch changes
         options: ['true', 'false']
         
 
+permissions:
+  contents: read
+
 jobs:
   spellcheck: # run the action
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: stone-payments/approved-actions/actions/checkout/v4@stable
 
       - name: Install Node
-        uses: actions/setup-node@v4
+        uses: stone-payments/approved-actions/actions/setup-node/v4@stable
         with:
           node-version: 18
       
@@ -26,7 +29,7 @@ jobs:
           cd .cspell 
           npm install
 
-      - uses: streetsidesoftware/cspell-action@v6
+      - uses: streetsidesoftware/cspell-action@v6 # approved-actions: nao encontrado no catalogo — revisao manual necessaria
         with:
           incremental_files_only: ${{ github.event.inputs.incremental_files_only }}
           config: "./cspell.json"
