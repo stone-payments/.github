@@ -29,7 +29,7 @@ jobs:
           cd .cspell 
           npm install
 
-      - uses: streetsidesoftware/cspell-action@v6 # approved-actions: nao encontrado no catalogo — revisao manual necessaria
+      - uses: stone-payments/approved-actions/streetsidesoftware/cspell-action/v6@stable
         with:
           incremental_files_only: ${{ github.event.inputs.incremental_files_only }}
           config: "./cspell.json"
